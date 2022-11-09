@@ -35,6 +35,26 @@ In this we can see status of following stuff in each host-
 
 Now we have Network status map which is graphical representation of the network status
  
+ Theory:
+ Nagios
+By
+Alexander S. Gillis, Technical Writer and Editor
+Nagios is an open source monitoring system for computer systems. It was designed to run on the Linux operating system and can monitor devices running Linux, Windows and Unix operating systems (OSes).
+
+Nagios software runs periodic checks on critical parameters of application, network and server resources. For example, Nagios can monitor memory usage, disk usage, microprocessor load, the number of currently running processes and log files. Nagios also can monitor services, such as Simple Mail Transfer Protocol (SMTP), Post Office Protocol 3 (POP3), Hypertext Transfer Protocol (HTTP) and other common network protocols. Active checks are initiated by Nagios, while passive checks come from external applications connected to the monitoring tool.
+
+Originally called NetSaint and released in 1999, Nagios was developed by Ethan Galstad and subsequently refined by numerous contributors as an open source project. Nagios Enterprises, a company based around the Nagios Core technology, offers multiple products, such as XI, Log Server, Network Analyzer and Fusion.
+
+Nagios structure
+A user can choose to work in the command-line interface (CLI) or select a web-based graphical user interface (GUI) in some versions of Nagios and from third parties. Nagios' dashboard provides an overview of the critical parameters monitored on assets.
+
+Based on the parameters and thresholds defined, Nagios can send out alerts if critical levels are reached. These notifications can be sent in different ways, including email and text messages. An authorization system allows the administrator to restrict access.
+
+Nagios runs both agent-based and agentless configurations. Independent agents are installed on any hardware or software system to collect data that is then reported back to the management server. Agentless monitoring uses existing protocols to emulate an agent. Both approaches can monitor file system usage, OS metrics, service and process states and more.
+
+Examples of Nagios agents include Nagios Remote Data Processor (NRDP), Nagios Cross Platform Agent (NCPA) and NSClient++. Nagios can also run remote scripts and plug-ins using the Nagios Remote Plugin Executor (NRPE) agent. NRPE enables remote monitoring of system metrics such as system load, memory and disk usage. It consists of the check_nrpe plug-in, which is stored on the local monitoring machine, and the NRDP, running on the remote machine. Nagios uses a plug-in to consolidate data from the NRPE agent before it goes to the management server for processing. NRPE can also communicate with Windows agents to monitor Windows machines.
+
+Nagios supports plug-ins that are stand-alone add-ons and extensions so the user can define targets and which parameters on these targets to monitor. Nagios plug-ins process command-line arguments and communicate the commands with Nagios Core. There are around 50 plug-ins developed and maintained by Nagios, while there are over 3,000 from the community. These plug-ins are categorized into lists including hardware, software, cloud, OSes, security, log files and network connections. As an example, when used in conjunction with environmental-sensing systems, a Nagios plug-in can share data on environmental variables, such as temperature, humidity or barometric pressure.
 
 
 
